@@ -6,15 +6,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "fmt": "prettier . --write",
     "fmt-check": "prettier . --check",
-    "live": "http-server ./index.html"
+    "live": "live-server public"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "live-server": "^1.2.2",
     "prettier": "3.6.0"
-  },
-  "dependencies": {
-    "http-server": "^14.1.1"
   }
 }
