@@ -34,19 +34,17 @@
 
           <nav class="header__user-menu">
             <a href="#"><i class="icon icon-medium fa-solid fa-bell"></i></a>
-            <a href="#"><img class="header__profile-picture" src="./assets/img/profile-picture.png" alt="" /></a>
+            <input type="checkbox" id="toggle-user-menu" hidden />
+            <label for="toggle-user-menu">
+              <img class="header__profile-picture" src="./assets/img/profile-picture.png" alt="" />
+            </label>
+            <ul class="header__profile-menu">
+              <li class="header__menu-item">Account</li>
+              <li>Settings</li>
+              <li>Log out</li>
+            </ul>
           </nav>
         </div>
-
-        <!-- <div class="profile-container">
-          <input type="checkbox" id="toggle-user-menu" hidden />
-          <label for="toggle-user-menu"> </label>
-          <ul class="menu-dropdown">
-            <li class="menu-itemss">Account</li>
-            <li>Settings</li>
-            <li>Log out</li>
-          </ul>
-        </div> -->
       </section>
     </header>
   </body>

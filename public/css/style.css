@@ -133,17 +133,6 @@ body {
   font-size: 1.3rem;
 }
 
-/* 
-.header__page-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: left;
-  padding: 8px;
-  margin-bottom: 10px;
-  gap: 28px;
-} */
-
 .header__controller {
   display: flex;
   justify-content: flex-end;
@@ -172,4 +161,25 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+}
+
+.header__profile-menu {
+  display: none;
+}
+
+.header__user-menu input[type="checkbox"]:checked + label + .header__profile-menu {
+  display: flex;
+}
+
+.header__profile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 45px;
+  padding: 10px;
+  background-color: var(--secondary-background-color);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 45px;
+  width: 140px;
 }
