@@ -28,8 +28,8 @@
 
         <div class="header__controller">
           <div class="header__search">
-            <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><input type="text" class="header__input" placeholder="Search" /></a>
+            <a href="#"><i class="icon header__icon fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><input type="text" class="header__input" placeholder="Search for music" /></a>
           </div>
 
           <nav class="header__user-menu">
@@ -40,12 +40,108 @@
             </label>
             <ul class="header__profile-menu">
               <li class="header__menu-item">Account</li>
-              <li>Settings</li>
-              <li>Log out</li>
+              <li class="header__menu-item">Settings</li>
+              <li class="header__menu-item">Log out</li>
             </ul>
           </nav>
         </div>
       </section>
     </header>
+
+    <main class="features">
+      <section class="features-container">
+        <nav class="features-nav-menu bottom-divisor">
+          <div class="feature">
+            <input type="checkbox" id="toggle-main" hidden />
+            <label for="toggle-main" class="feature-title">
+              <h2>MAIN</h2>
+              <a><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+            </label>
+            <div class="feature-items">
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-regular fa-window-restore icons desktop-icons"></i></a>
+                <p>Browse</p>
+              </span>
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-user-group icons desktop-icons"></i></a>
+                <p>Activity</p>
+              </span>
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-radio icons desktop-icons"></i></a>
+                <p>Radio</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="feature">
+            <input type="checkbox" id="toggle-your-music" hidden />
+            <label for="toggle-your-music" class="feature-title">
+              <h2>YOUR MUSIC</h2>
+              <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+            </label>
+            <div class="feature-items">
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-headphones icons desktop-icons"></i></a>
+                <p>Songs</p>
+              </span>
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-music icons desktop-icons"></i></a>
+                <p>Albums</p>
+              </span>
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-user icons desktop-icons"></i></a>
+                <p>Artists</p>
+              </span>
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-file icons desktop-icons"></i></a>
+                <p>Local Files</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="feature">
+            <input type="checkbox" id="toggle-playlist" hidden />
+            <label for="toggle-playlist" class="feature-title">
+              <h2>PLAYLIST</h2>
+              <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+            </label>
+            <div class="feature-items">
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons"></i></a>
+                <p>Chill</p>
+              </span>
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons"></i></a>
+                <p>Travelling</p>
+              </span>
+              <span class="feature-item hover-border-right">
+                <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons"></i></a>
+                <p>Party night</p>
+              </span>
+            </div>
+          </div>
+        </nav>
+
+        <div class="playlists-container">
+          <span class="new-playlist-container bottom-divisor">
+            <a href=""><i class="fa-solid fa-plus icons icons-medium"></i></a>
+            <h2>New Playlist</h2>
+          </span>
+          <span class="playing bottom-divisor">
+            <span class="playing-song-container">
+              <!-- <img src="https://m.media-amazon.com/images/I/71FueAKQ22L._UF1000,1000_QL80_.jpg" class="medium-thumb-img" -->
+              alt="">
+              <span class="playing-song-info">
+                <h2 class="playing-sonng-artist">Metallica</h2>
+                <h4 class="playing-song-title">Orion</h4>
+              </span>
+            </span>
+            <span class="playlist-added">
+              <a href=""><i class="fa-solid fa-check icons icons-medium"></i></a>
+            </span>
+          </span>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
