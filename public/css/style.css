@@ -71,14 +71,16 @@ body {
 
 .icon--large {
   font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .icon--medium {
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .icon--small {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .icon--disabled {
@@ -273,7 +275,7 @@ body {
 .sidebar__nav {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 32px;
   align-items: flex-start;
   align-content: flex-start;
 }
@@ -285,13 +287,16 @@ body {
 }
 
 .sidebar__title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .sidebar__feature-wrapper {
   display: flex;
   gap: 4px;
   color: var(--font-color-light);
+  align-items: center;
+  align-content: center;
 }
 
 .sidebar__items-wrapper {
@@ -310,6 +315,17 @@ body {
   padding-left: 6px;
 }
 
+.sidebar__a {
+  display: flex;
+  justify-content: center;
+}
+
 .sidebar__feature-item {
   display: flex;
+}
+
+@media (min-width: 650px) {
+  .sidebar {
+    width: 30dvw;
+  }
 }
