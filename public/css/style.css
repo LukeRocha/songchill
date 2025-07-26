@@ -15,12 +15,20 @@
   --light-icon-color: #d3d3d3;
   --input-background: #1b1b1b;
 }
-
+img{
+  width: 12px;
+}
 body {
   background-color: var(--main-background-color);
   font-family: "Rubik", sans-serif;
   animation-timing-function: linear;
   color: var(--font-color);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* General classes */
@@ -88,6 +96,7 @@ body {
 }
 
 .icon--desktop-view {
+  display: block;
 }
 
 .icon--wrapper {
@@ -248,14 +257,14 @@ body {
 
 .sidebar {
   width: 100dvw;
-  height: 1200px;
+  height: 100%;
   top: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
   padding: 18px;
   gap: 20px;
-  position: absolute;
+  position: fixed;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   background-color: var(--secondary-background-color);
@@ -394,5 +403,19 @@ body {
   gap: 8px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 1200px) {
+  .sidebar {
+    transform: translateX(0) !important;
+    position: relative;
+    top: 0;
+    width: 300px;
+  }
+
+  .sidebar__header {
+    display: none;
+  }
+
+  .icon--desktop-view {
+    display: none;
+  }
 }
