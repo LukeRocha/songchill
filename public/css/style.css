@@ -548,13 +548,11 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .header__left-content{
-
-  left: 0;
-  padding-left: 0;
-  
-}
-.icon--desktop-view {
-  display: none;
-}
+  .header__left-content {
+    left: 0;
+    padding-left: 0;
+  }
+  .icon--desktop-view {
+    display: none;
+  }
 }
