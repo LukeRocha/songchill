@@ -33,7 +33,6 @@
             <a href="#"><i class="icon header__icon fa-solid fa-magnifying-glass"></i></a>
             <a href="#"><input type="text" class="header__input" placeholder="Search for music" /></a>
           </div>
-
           <nav class="header__user-menu">
             <a href="#"><i class="icon icon-medium fa-solid fa-bell"></i></a>
             <input type="checkbox" id="toggle-user-menu" hidden />
@@ -52,7 +51,6 @@
 
     <main class="layout">
       <input type="checkbox" id="toggle-sidebar" hidden />
-
       <aside class="sidebar">
         <div class="sidebar__header">
           <span class="sidebar__logo-wrapper">
@@ -217,19 +215,19 @@
         </div>
       </aside>
 
-      <section class="artist-area">
-        <div class="artist-area__profile-wrapper">
-          <div class="artist-area__profile-data">
-            <div class="artist-area__profile-picture-wrapper">
+      <section class="artist-content">
+        <div class="artist-content__profile-wrapper">
+          <div class="artist-content__profile-data">
+            <div class="artist-content__profile-picture-wrapper">
               <img src="./assets/img/artist-profile-picture.jpg" alt="" class="img--artist-profile" />
             </div>
-            <div class="artist-area__profile-info">
-              <div class="artist-area__info-wrapper">
-                <div class="artist-area__profile-title">
+            <div class="artist-content__profile-info">
+              <div class="artist-content__info-wrapper">
+                <div class="artist-content__profile-title">
                   <h2>Artist</h2>
                   <h1>METALLICA</h1>
                 </div>
-                <div class="artist-area__profile-interactions">
+                <div class="artist-content__profile-interactions">
                   <button class="button button--play pointer">
                     <i class="fa-solid fa-play pointer"></i>
                     PLAY
@@ -240,14 +238,14 @@
                   </button>
                 </div>
               </div>
-              <div class="artist-area__profile-statistics">
+              <div class="artist-content__profile-statistics">
                 <h2>60,589,222</h2>
                 <h2>MONTHLY LISTENERS</h2>
               </div>
             </div>
           </div>
-          <section class="artist-area__menu-tabs">
-            <nav class="artist-area__nav-tabs">
+          <section class="artist-content__menu-tabs">
+            <nav class="artist-content__nav-tabs">
               <span class="hover-border-bottom">
                 <h2>OVERVIEW</h2>
               </span>
@@ -256,326 +254,58 @@
             </nav>
           </section>
         </div>
-        <!-- more to come -->
+        <section class="artist-content__songs-wrapper">
+          <div class="artist-content__popular-content">
+            <div class="artist-content__feature-block">
+              <span class="artist-content__block-title">
+                <h2>LATEST REALEASE</h2>
+              </span>
+              <div class="artist-content__latest-release pointer">
+                <img src="./assets/img/related-album-cover-8.jpg" alt="" class="" />
+                <span class="artist-content__latest-release-info">
+                  <h2>72 Seasons</h2>
+                  <h4>April 14 - 2023</h4>
+                </span>
+              </div>
+            </div>
+            <div class="artist-content__feature-block">
+              <span class="artist-content__block-title">
+                <h2>SONGS</h2>
+              </span>
+              <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <img src="./assets/img/album-cover.jpg" alt="" id="songs-track-img" />
+                <h2 id="artist-content__songs-track-position">1</h2>
+                <h2 id="artist-content__songs-track-title">Master of Puppets</h2>
+                <h2 id="artist-content__songs-track-views">3,255,655,222</h2>
+              </div>
+              <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <img src="./assets/img/related-album-cover-4.jpg" alt="" id="songs-track-img" />
+                <h2 id="artist-content__songs-track-position">2</h2>
+                <h2 id="artist-content__songs-track-title">The unforgiven</h2>
+                <h2 id="artist-content__songs-track-views">1,000,500,025</h2>
+              </div>
+              <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <img src="./assets/img/related-album-cover-4.jpg" alt="" id="songs-track-img" />
+                <h2 id="artist-content__songs-track-position">3</h2>
+                <h2 id="artist-content__songs-track-title">Enter sandman</h2>
+                <h2 id="artist-content__songs-track-views">955,455,122</h2>
+              </div>
+              <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <img src="./assets/img/related-album-cover-1.jpg" alt="" id="songs-track-img" />
+                <h2 id="artist-content__songs-track-position">4</h2>
+                <h2 id="artist-content__songs-track-title">Creeping Death</h2>
+                <h2 id="artist-content__songs-track-views">865,652,748</h2>
+              </div>
+              <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <img src="./assets/img/related-album-cover-2.jpg" alt="" id="songs-track-img" />
+                <h2 id="artist-content__songs-track-position">5</h2>
+                <h2 id="artist-content__songs-track-title">One</h2>
+                <h2 id="artist-content__songs-track-views">700,658,123</h2>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
-
-    <!-- <section class="app-artist-container bottom-divisor">
-      <div class="artist-profile-container">
-        <div class="artist-info">
-          <div class="artist-info-wrapper">
-            <div class="artist-profile-picture">
-              <img src="./assets/img/profile-picture.png" alt="" />
-            </div>
-            <div class="artist-profile-data">
-              <span class="artist-profile-title">
-                <h3 class="pointer">Artist</h3>
-                <h1 class="pointer">Metallica</h1>
-              </span>
-              <div class="button-wrapper pointer hover-bottom-border">
-                <button class="button button-play pointer">
-                  <i class="fa-solid fa-play pointer"></i>
-                  PLAY
-                </button>
-                <button class="button pointer">FOLLOW</button>
-                <button class="button-circle pointer">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <span class="artist-profile-listeners-info">
-            <h3>60,589,222</h3>
-            <h3>MONTHLY LISTENERS</h3>
-          </span>
-        </div>
-        <section class="artist-menu-tabs">
-          <nav class="nav-tabs">
-            <span class="hover-border-bottom">
-              <h2>OVERVIEW</h2>
-            </span>
-
-            <h2 class="hover-border-bottom">BIOGRAPHY</h2>
-            <h2 class="hover-border-bottom">ALBUMS</h2>
-          </nav>
-        </section>
-      </div>
-
-      <section class="artist-content-container">
-        <div class="popular-content-container">
-          <div class="content-block-container">
-            <span class="content-block-title">
-              <h2>LATEST REALEASE</h2>
-            </span>
-            <div class="content-block-items pointer">
-              <img src="./assets/img/related-album-cover-8.jpg" alt="" class="content-thumb-img medium-thumb-img" />
-              <span class="release-content-info">
-                <h2 class="playing-song-title">72 Seasons</h2>
-                <h4 class="playing-sonng-artist">April 14 - 2023</h4>
-              </span>
-            </div>
-          </div>
-          <div class="content-block-container">
-            <span class="content-block-title">
-              <h2>SONGS</h2>
-            </span>
-            <div class="content-track-row bottom-divisor-light pointer">
-              <img src="./assets/img/album-cover.jpg" alt="" id="songs-track-img" />
-              <h2 id="songs-track-position">1</h2>
-              <h2 id="songs-track-title">Master of Puppets</h2>
-              <h2 id="songs-track-views">3,255,655,222</h2>
-            </div>
-            <div class="content-track-row bottom-divisor-light pointer">
-              <img src="./assets/img/related-album-cover-4.jpg" alt="" id="songs-track-img" />
-              <h2 id="songs-track-position">2</h2>
-              <h2 id="songs-track-title">The unforgiven</h2>
-              <h2 id="songs-track-views">1,000,500,025</h2>
-            </div>
-            <div class="content-track-row bottom-divisor-light pointer">
-              <img src="./assets/img/related-album-cover-4.jpg" alt="" id="songs-track-img" />
-              <h2 id="songs-track-position">3</h2>
-              <h2 id="songs-track-title">Enter sandman</h2>
-              <h2 id="songs-track-views">955,455,122</h2>
-            </div>
-            <div class="content-track-row bottom-divisor-light pointer">
-              <img src="./assets/img/related-album-cover-1.jpg" alt="" id="songs-track-img" />
-              <h2 id="songs-track-position">4</h2>
-              <h2 id="songs-track-title">Creeping Death</h2>
-              <h2 id="songs-track-views">865,652,748</h2>
-            </div>
-            <div class="content-track-row bottom-divisor-light pointer">
-              <img src="./assets/img/related-album-cover-2.jpg" alt="" id="songs-track-img" />
-              <h2 id="songs-track-position">5</h2>
-              <h2 id="songs-track-title">One</h2>
-              <h2 id="songs-track-views">700,658,123</h2>
-            </div>
-          </div>
-        </div>
-
-        <section class="related-artists-container">
-          <div class="related-artists-wrapper">
-            <span class="related-artist-title">
-              <h2>RELATED ARTISTS</h2>
-            </span>
-            <div class="related-artists-block-items">
-              <div class="related-artist-item pointer">
-                <img
-                  src="./assets/img/related-artist-1.jpg"
-                  alt=""
-                  class="content-thumb-img related-artist-img medium-thumb-img"
-                />
-                <h2 class="playing-song-title">Death</h2>
-              </div>
-              <div class="related-artist-item pointer">
-                <img
-                  src="./assets/img/related-artist-2.jpg"
-                  alt=""
-                  class="content-thumb-img related-artist-img medium-thumb-img"
-                />
-                <h2 class="playing-song-title">David Bowie</h2>
-              </div>
-              <div class="related-artist-item pointer">
-                <img
-                  src="./assets/img/related-artist-3.jpg"
-                  alt=""
-                  class="content-thumb-img related-artist-img medium-thumb-img"
-                />
-                <h2 class="playing-song-title">Incubus</h2>
-              </div>
-              <div class="related-artist-item pointer">
-                <img
-                  src="./assets/img/related-artist-4.jpg"
-                  alt=""
-                  class="content-thumb-img related-artist-img medium-thumb-img"
-                />
-                <h2 class="playing-song-title">Joji</h2>
-              </div>
-              <div class="related-artist-item pointer">
-                <img
-                  src="./assets/img/related-artist-5.jpg"
-                  alt=""
-                  class="content-thumb-img related-artist-img medium-thumb-img"
-                />
-                <h2 class="playing-song-title">Dream Theater</h2>
-              </div>
-              <div class="related-artist-item pointer">
-                <img
-                  src="./assets/img/related-artist-6.jpg"
-                  alt=""
-                  class="content-thumb-img related-artist-img medium-thumb-img"
-                />
-                <h2 class="playing-song-title">Sepultura</h2>
-              </div>
-              <div class="related-artist-item pointer">
-                <img
-                  src="./assets/img/related-artist-7.jpg"
-                  alt=""
-                  class="content-thumb-img related-artist-img medium-thumb-img"
-                />
-                <h2 class="playing-song-title">AB'S</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <section class="artist-albums-container">
-        <div class="content-block-container">
-          <span class="related-artist-title">
-            <h2>ALBUMS</h2>
-          </span>
-        </div>
-        <div class="albums-menu">
-          <div class="artist-album-item">
-            <img src="./assets/img/album-cover.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>Master of Puppets</h2>
-          </div>
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-1.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>Ride the Lightning</h2>
-          </div>
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-2.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>...And justice for all</h2>
-          </div>
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-3.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>Kill 'Em All</h2>
-          </div>
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-4.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>Metallica</h2>
-          </div>
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-5.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>Load</h2>
-          </div>
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-6.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>Reload</h2>
-          </div>
-
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-7.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>S&M</h2>
-          </div>
-
-          <div class="artist-album-item">
-            <img src="./assets/img/related-album-cover-8.jpg" class="album-cover-img pointer" alt="master of puppets" />
-            <h2>72 Seasons</h2>
-          </div>
-        </div>
-      </section>
-
-      <section class="playing-album-container">
-        <div class="playing-album-info-container">
-          <span>
-            <img src="./assets/img/album-cover.jpg" alt="" />
-          </span>
-          <div class="playing-album-artist-data">
-            <span class="playing-album-title">
-              <h4>1986</h4>
-              <h2>Master of Puppets</h2>
-            </span>
-
-            <span class="album-buttons-info-wrapper">
-              <button class="button pointer">SAVE</button>
-              <button class="button-circle pointer">
-                <i class="fa-solid fa-ellipsis"></i>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="playing-album-table-container">
-          <table class="playing-album-table">
-            <colgroup>
-              <col style="width: 5%" />
-              <col style="width: 75%" />
-              <col style="width: 5%" />
-              <col style="width: 5%" />
-            </colgroup>
-            <tr>
-              <th>#</th>
-              <th id="playing-album-song-column">Song</th>
-              <th><i class="fa-regular fa-clock"></i></th>
-              <th><i class="fa-solid fa-thumbs-up"></i></th>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>1</td>
-              <td class="playing-album-song-name-container pointer">
-                Battery
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>5:13</td>
-              <td><i class="fa-solid fa-arrow-trend-up"></i></td>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>2</td>
-              <td class="playing-album-song-name-container pointer">
-                Master of Puppets
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>8:33</td>
-              <td><i class="fa-solid fa-arrow-trend-up"></i></td>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>3</td>
-              <td class="playing-album-song-name-container pointer">
-                The Thing That Should Not Be
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>6:37</td>
-              <td><i class="fa-solid fa-arrow-trend-up"></i></td>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>4</td>
-              <td class="playing-album-song-name-container pointer">
-                Welcome Home (Sanitarium)
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>6:28</td>
-              <td><i class="fa-solid fa-arrow-trend-up"></i></td>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>5</td>
-              <td class="playing-album-song-name-container pointer">
-                Disposable Heroes
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>8:17</td>
-              <td><i class="fa-solid fa-arrow-trend-down"></i></td>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>6</td>
-              <td class="playing-album-song-name-container pointer">
-                Lepper Messiah
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>5:40</td>
-              <td><i class="fa-solid fa-arrow-trend-down"></i></td>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>7</td>
-              <td class="playing-album-song-name-container pointer">
-                Orion
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>8:28</td>
-              <td><i class="fa-solid fa-arrow-trend-up"></i></td>
-            </tr>
-            <tr class="bottom-divisor-light">
-              <td>8</td>
-              <td class="playing-album-song-name-container pointer">
-                Damage, Inc.
-                <label for="" class="label-explicit-content">EXPLICIT</label>
-              </td>
-              <td>5:33</td>
-              <td><i class="fa-solid fa-arrow-trend-up"></i></td>
-            </tr>
-          </table>
-        </div>
-      </section>
-    </section> -->
   </body>
 </html>
