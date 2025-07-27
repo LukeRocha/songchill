@@ -118,6 +118,10 @@ body {
   width: 4em;
 }
 
+.pointer-element {
+  cursor: pointer;
+}
+
 /* Header section */
 .header {
   width: 100%;
@@ -557,7 +561,8 @@ body {
   }
 }
 
-.artist-content__songs-wrapper {
+/* Artist content popular songs */
+.artist-content__feature-wrapper {
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -565,7 +570,7 @@ body {
   width: 100%;
 }
 
-.artist-content__songs-wrapper img {
+.artist-content__feature-wrapper img {
   width: 65px;
 }
 
@@ -599,10 +604,10 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-.realeasecontent-info h2,
+/* .realeasecontent-info h2,
 h4 {
   color: var(--font-color-light);
-}
+} */
 
 .artist-content__popular-song-row {
   display: flex;
@@ -631,20 +636,73 @@ i {
 #artist-content__songs-track-icon {
   display: flex;
   justify-content: flex-end;
-  /* width: 14vw; */
 }
 
 #artist-content__songs-track-title {
-  /* width: 300px; */
   text-align: left;
 }
 
 #artist-content__songs-track-views {
-  /* width: 60vw; */
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
   flex-wrap: wrap;
   color: var(--font-color-light);
   align-items: flex-end;
+}
+
+/* Related artists */
+.artist-content__related-artists {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+
+.artist-content__artists-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 14px;
+  padding: 14px 0;
+}
+
+.artist-content__related-artist-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--font-color-light);
+  gap: 6px;
+}
+
+.artist-content__related-artist-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 750px) {
+  .artist-content__related-artist-item {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    background-color: var(--secondary-background-color);
+    width: 48%;
+    padding: 12px;
+  }
+
+  .artist-content__artists-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1020px) {
+  .artist-content__feature-wrapper {
+    flex-direction: row;
+  }
+  .artist-content__popular-content {
+    width: 550px;
+  }
 }
