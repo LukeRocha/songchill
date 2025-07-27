@@ -246,6 +246,10 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .header{
+    width: auto;
+  }
+
   .header__search {
     justify-content: flex-start;
     margin-left: 30px;
@@ -604,11 +608,6 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-/* .realeasecontent-info h2,
-h4 {
-  color: var(--font-color-light);
-} */
-
 .artist-content__popular-song-row {
   display: flex;
   align-items: center;
@@ -656,6 +655,7 @@ i {
   width: 100%;
   height: auto;
   padding: 15px;
+  background-color: var(--main-background-color);
 }
 
 .artist-content__artists-wrapper {
@@ -706,3 +706,127 @@ i {
     width: 550px;
   }
 }
+
+
+
+
+
+
+
+
+.artist-content__discography{
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  overflow: auto;
+  width: 100%;
+}
+
+.artist-content__discography-slider{
+  display: flex;
+  overflow: auto;
+  
+}
+
+.artist-content__slider-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  gap: 8px;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.artist-content__slider-album-cover{
+  width: 120px;
+}
+
+.artist-album-item h2{
+  width: 100%;
+}
+
+.playing-album-table{
+  width: 100%;
+}
+
+.playing-album-title{
+  text-align: start;
+}
+
+.playing-album-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  padding: 15px;
+}
+
+.playing-album-info-container{
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.playing-album-artist-data{
+  display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 20px;
+}
+
+.playing-album-artist-data h2{
+  font-size: larger;
+}
+
+.playing-album-info-container img{
+  width: 160px;
+}
+
+.album-buttons-info-wrapper{
+  display: flex;
+  width: 200px;
+  gap: 20px;
+}
+
+.playing-album-table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.playing-album-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.playing-album-table th,
+.playing-album-table td {
+  color: var(--font-color-light);
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.playing-album-table th {
+  font-weight: bold;
+}
+
+.playing-album-song-name-container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none;
+}
+
+.label-explicit-content{
+  display: none;
+  border: solid 1px var(--font-color);
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+
+
+
+
