@@ -17,14 +17,14 @@
   <body>
     <header class="header bottom-divisor">
       <section class="header__menu">
-        <div class="header__left-content">
+        <div class="header__left-content element--pointer">
           <label for="toggle-sidebar">
             <i class="header__hamburguer fa-solid fa-bars icon--medium icon--desktop-view"></i>
           </label>
 
-          <div class="header__logo-wrapper">
+          <div class="header__logo-wrapper element--pointer">
             <i class="icon--large header__menu-logo fa-solid fa-guitar" style="color: #5714af"></i>
-            <h2 class="header__title">Songchill</h2>
+            <h2 class="header__title element--pointer">Songchill</h2>
           </div>
         </div>
 
@@ -36,13 +36,13 @@
           <nav class="header__user-menu">
             <a href="#"><i class="icon icon-medium fa-solid fa-bell"></i></a>
             <input type="checkbox" id="toggle-user-menu" hidden />
-            <label for="toggle-user-menu">
+            <label for="toggle-user-menu" class="element--pointer">
               <img class="header__profile-picture" src="./assets/img/profile-picture.png" alt="" />
             </label>
             <ul class="header__profile-menu">
-              <li class="header__menu-item">Account</li>
-              <li class="header__menu-item">Settings</li>
-              <li class="header__menu-item">Log out</li>
+              <li class="header__menu-item element--pointer">Account</li>
+              <li class="header__menu-item element--pointer">Settings</li>
+              <li class="header__menu-item element--pointer">Log out</li>
             </ul>
           </nav>
         </div>
@@ -66,17 +66,23 @@
           <div class="sidebar__feature">
             <input type="checkbox" id="toggle-main" hidden />
             <label for="toggle-main" class="sidebar__feature-wrapper">
-              <h2 class="sidebar__title">MAIN</h2>
-              <a class="sidebar__a"><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i></a>
+              <h2 class="sidebar__title element--pointer">MAIN</h2>
+              <a class="sidebar__a"
+                ><i class="fa-solid fa-chevron-down icon--small icon-disabled element--pointer"></i
+              ></a>
             </label>
             <div class="sidebar__items-wrapper">
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"><i class="fa-regular fa-window-restore icon desktop-icon"></i></a>
-                <p>Browse</p>
+                <a href="#" class="sidebar__a"
+                  ><i class="fa-regular fa-window-restore icon desktop-icon element--pointer"></i
+                ></a>
+                <p class="element--pointer">Browse</p>
               </span>
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"><i class="fa-solid fa-user-group icon desktop-icon"></i></a>
-                <p>Activity</p>
+                <a href="#" class="sidebar__a"
+                  ><i class="fa-solid fa-user-group icon desktop-icon element--pointer"></i
+                ></a>
+                <p class="element--pointer">Activity</p>
               </span>
               <span class="sidebar__item hover-border-right">
                 <a href="#" class="sidebar__a"><i class="fa-solid fa-radio icon desktop-icon"></i></a>
@@ -361,7 +367,6 @@
             </div>
           </section>
         </section>
-
         <section class="artist-content__discography">
           <div class="artist-content__feature-block">
             <span>
