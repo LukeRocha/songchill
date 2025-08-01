@@ -596,7 +596,7 @@ i {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  overflow: hidden;
+  width: 100%;
 }
 
 .artist-content__discography-slider {
@@ -969,6 +969,16 @@ i {
 }
 
 @media (min-width: 1020px) {
+  .artist-content__popular-content-wrapper {
+    width: 100%;
+  }
+
+  .artist-content__related-artists {
+    max-width: 100%;
+  }
+  .artist-content__related-artist-item {
+    width: 100%;
+  }
   .artist-content__feature-wrapper {
     flex-direction: row;
   }
@@ -1025,6 +1035,10 @@ i {
   .sidebar__header {
     display: none;
   }
+  .artist-content__popular-content-wrapper {
+    width: 100%;
+    min-width: 420px;
+  }
 
   .icon--desktop-view {
     display: none;
@@ -1064,9 +1078,5 @@ i {
 @media (min-width: 1350px) {
   .artist-content__feature-wrapper {
     flex-direction: row;
-    gap: 100px;
-  }
-  .artist-content__related-artist-item {
-    width: 100%;
   }
 }
