@@ -187,6 +187,8 @@ ul > li {
 
 .header__profile-menu {
   display: none;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 1.15);
+
 }
 
 .header__user-menu input[type="checkbox"]:checked + label + .header__profile-menu {
@@ -198,12 +200,12 @@ ul > li {
   display: none;
   flex-direction: column;
   gap: 45px;
-  padding: 15px;
+  padding: 18px;
   background-color: var(--secondary-background-color);
   position: absolute;
   z-index: 1;
-  right: 0;
-  top: 45px;
+  right: 20px;
+  top: 50px;
 }
 
 .layout {
@@ -215,6 +217,8 @@ ul > li {
 /* Side Bar */
 #toggle-sidebar:checked ~ .sidebar {
   transform: translateX(0);
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 1.85);
+
 }
 
 .sidebar {
@@ -230,6 +234,7 @@ ul > li {
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   background-color: var(--secondary-background-color);
+  border-right: var(--main-background-color-transparent) 1px solid;
 }
 
 .sidebar__header {
