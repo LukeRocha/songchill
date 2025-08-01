@@ -147,7 +147,8 @@ ul > li {
 .header__logo-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
 }
 
 .header__hamburguer {
