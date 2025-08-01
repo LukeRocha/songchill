@@ -127,7 +127,6 @@ ul > li {
 
 /* Header section */
 .header {
-  width: 100dvw;
   padding: 15px;
   background-color: var(--secondary-background-color);
 }
@@ -366,6 +365,7 @@ ul > li {
   flex-direction: column;
   align-items: center;
   padding: 0;
+  overflow: hidden;
 }
 
 .img--artist-profile {
@@ -402,7 +402,6 @@ ul > li {
 }
 
 .artist-content__profile-title {
-  /* height: 32px; */
   gap: 14px;
   display: flex;
   flex-direction: column;
@@ -566,23 +565,17 @@ i {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  width: 100%;
+  overflow: hidden;
 }
 
 .artist-content__discography-slider {
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  max-width: 100%;
-  white-space: nowrap;
+  overflow: auto;
+  width: 100%;
   scroll-behavior: smooth;
-}
-
-.artist-content__discography-slider {
   scrollbar-width: thin;
   scrollbar-color: #555 transparent;
 
-  /* Chrome, Edge, Safari */
   &::-webkit-scrollbar {
     height: 8px;
   }
@@ -604,14 +597,13 @@ i {
 }
 
 .artist-content__slider-item {
+  display: flex;
   flex: 0 0 auto;
+  flex-direction: column;
   width: 140px;
   box-sizing: border-box;
-}
-.artist-content__slider-item {
-  display: flex;
+
   align-items: center;
-  flex-direction: column;
   padding: 15px;
   gap: 8px;
   text-align: center;
@@ -713,7 +705,6 @@ i {
 }
 
 .player {
-  width: 100dvw;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -950,24 +941,19 @@ i {
   .artist-content__feature-wrapper {
     flex-direction: row;
   }
-  .artist-content__popular-content {
-    width: 750px;
-  }
-
-  .artist-content__related-artist-item {
-    width: 100%;
-  }
 
   .artist-content__discography {
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
-    max-width: 1550px;
   }
+  
   .artist-content__discography-slider {
     overflow: auto;
     width: 100%;
+    max-width: 100%;
+    display: flex;
   }
-
+  
   .player__playing-artist {
     padding-left: 20px;
   }
@@ -1001,7 +987,6 @@ i {
   .sidebar {
     transform: translateX(0) !important;
     position: relative;
-    top: 0;
     min-width: 300px;
   }
 
@@ -1021,8 +1006,8 @@ i {
     display: none;
   }
 
-  .artist-content__popular-content {
-    width: 950px;
+  .artist-content__discography{
+    overflow: hidden;
   }
 
   .player__playing-artist {
