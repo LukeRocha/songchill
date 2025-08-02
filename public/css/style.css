@@ -33,6 +33,10 @@ body {
 ul > li {
   cursor: pointer;
 }
+
+.logo{
+  width: 160px;
+}
 /* General elements classes */
 .button {
   min-width: 80px;
@@ -147,8 +151,8 @@ ul > li {
 .header__logo-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 8px;
+  align-items: center;
+  gap: 12px;
 }
 
 .header__hamburguer {
@@ -200,8 +204,8 @@ ul > li {
   background-color: var(--secondary-background-color);
   position: absolute;
   z-index: 1;
-  right: 20px;
-  top: 50px;
+  right: 0;
+  top: 67px;
   border: 0.5px solid var(--main-background-color-transparent);
 }
 
