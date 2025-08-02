@@ -23,6 +23,10 @@ body {
   color: var(--font-color);
 }
 
+body.sidebar-open {
+  overflow: hidden;
+}
+
 html,
 body {
   height: 100%;
@@ -30,13 +34,27 @@ body {
   padding: 0;
 }
 
-ul > li {
+a,
+input[type="checkbox"],
+input[type="radio"],
+label[for],
+[role="button"],
+p,
+li,
+img,
+ul,
+h2,
+td,
+i,
+h3,
+[tabindex]:not([tabindex="-1"]) {
   cursor: pointer;
 }
 
-.logo{
+.logo {
   width: 160px;
 }
+
 /* General elements classes */
 .button {
   min-width: 80px;
@@ -239,7 +257,6 @@ ul > li {
   gap: 12px;
 }
 .layout {
-  
   display: flex;
   flex-direction: column;
 }

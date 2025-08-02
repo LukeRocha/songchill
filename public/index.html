@@ -17,11 +17,11 @@
   <body>
     <header class="header bottom-divisor">
       <section class="header__menu">
-        <div class="header__left-content element--pointer">
+        <div class="header__left-content">
           <label for="toggle-sidebar" class="header__logo-wrapper">
             <i class="header__hamburguer fa-solid fa-bars icon--medium icon--desktop-view"></i>
-            <img src="./img/logo.png" alt="" class="logo">
           </label>
+          <img src="./img/logo.png" alt="" class="logo" />
         </div>
 
         <div class="header__controller">
@@ -32,7 +32,7 @@
           <nav class="header__user-menu">
             <a href="#"><i class="icon icon-medium fa-solid fa-bell"></i></a>
             <input type="checkbox" id="toggle-user-menu" hidden />
-            <label for="toggle-user-menu" class="element--pointer">
+            <label for="toggle-user-menu" class="">
               <img class="header__profile-picture" src="./img/profile-picture.png" alt="" />
             </label>
             <ul class="header__profile-menu">
@@ -43,21 +43,15 @@
                 <h3>lucas@mail.com</h3>
               </div>
               <span class="header__user-menu-items bottom-divisor--light-bg">
-                <li class="header__menu-item element--pointer">
-                  <i class="fa-regular fa-user" style="color: #ffffff"></i>Account
-                </li>
-                <li class="header__menu-item element--pointer">
-                  <i class="fa-solid fa-sliders" style="color: #ffffff"></i>Settings
-                </li>
-                <li class="header__menu-item element--pointer">
-                  <i class="fa-solid fa-cart-plus" style="color: #ffffff"></i>Plans
-                </li>
+                <li class="header__menu-item"><i class="fa-regular fa-user" style="color: #ffffff"></i>Account</li>
+                <li class="header__menu-item"><i class="fa-solid fa-sliders" style="color: #ffffff"></i>Settings</li>
+                <li class="header__menu-item"><i class="fa-solid fa-cart-plus" style="color: #ffffff"></i>Plans</li>
               </span>
               <span class="header__user-menu-items bottom-divisor--light-bg">
-                <li class="header__menu-item element--pointer">
+                <li class="header__menu-item">
                   <i class="fa-regular fa-circle-question" style="color: #ffffff"></i>Support
                 </li>
-                <li class="header__menu-item element--pointer">
+                <li class="header__menu-item">
                   <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff"></i>Log out
                 </li>
               </span>
@@ -73,8 +67,7 @@
       <aside class="sidebar">
         <div class="sidebar__header">
           <span class="sidebar__logo-wrapper">
-            <img src="./img/logo.png" alt="" class="logo">
-
+            <img src="./img/logo.png" alt="" class="logo" />
           </span>
           <label for="toggle-sidebar">
             <i class="sidebar__hamburguer fa-solid fa-close icon--medium icon--desktop-view"></i>
@@ -85,23 +78,17 @@
           <div class="sidebar__feature">
             <input type="checkbox" id="toggle-main" hidden />
             <label for="toggle-main" class="sidebar__feature-wrapper">
-              <h2 class="sidebar__title element--pointer">MAIN</h2>
-              <a class="sidebar__a"
-                ><i class="fa-solid fa-chevron-down icon--small icon-disabled element--pointer"></i
-              ></a>
+              <h2 class="sidebar__title">MAIN</h2>
+              <a class="sidebar__a"><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i></a>
             </label>
             <div class="sidebar__items-wrapper">
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"
-                  ><i class="fa-regular fa-window-restore icon desktop-icon element--pointer"></i
-                ></a>
-                <p class="element--pointer">Browse</p>
+                <a href="#" class="sidebar__a"><i class="fa-regular fa-window-restore icon desktop-icon"></i></a>
+                <p class="">Browse</p>
               </span>
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"
-                  ><i class="fa-solid fa-user-group icon desktop-icon element--pointer"></i
-                ></a>
-                <p class="element--pointer">Activity</p>
+                <a href="#" class="sidebar__a"><i class="fa-solid fa-user-group icon desktop-icon"></i></a>
+                <p class="">Activity</p>
               </span>
               <span class="sidebar__item hover-border-right">
                 <a href="#" class="sidebar__a"><i class="fa-solid fa-radio icon desktop-icon"></i></a>
@@ -233,12 +220,12 @@
                   <h1>METALLICA</h1>
                 </div>
                 <div class="artist-content__profile-interactions">
-                  <button class="button button--play pointer">
-                    <i class="fa-solid fa-play pointer"></i>
+                  <button class="button button--play">
+                    <i class="fa-solid fa-play"></i>
                     PLAY
                   </button>
-                  <button class="button pointer">FOLLOW</button>
-                  <button class="button--circle pointer">
+                  <button class="button">FOLLOW</button>
+                  <button class="button--circle">
                     <i class="fa-solid fa-ellipsis"></i>
                   </button>
                 </div>
@@ -266,7 +253,7 @@
                 <span class="artist-content__block-title">
                   <h2>LATEST REALEASE</h2>
                 </span>
-                <div class="artist-content__latest-release pointer">
+                <div class="artist-content__latest-release">
                   <img src="./img/related-album-cover-8.jpg" alt="" class="" />
                   <span class="artist-content__latest-release-info">
                     <h2>72 Seasons</h2>
@@ -278,49 +265,49 @@
                 <span class="artist-content__block-title">
                   <h2>SONGS</h2>
                 </span>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/album-cover.jpg" alt="" id="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">1</h2>
                   <h2 class="artist-content__songs-track-title">Master of Puppets</h2>
                   <h2 class="artist-content__songs-track-views">3,255,655,222</h2>
                 </div>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/related-album-cover-4.jpg" alt="" class="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">2</h2>
                   <h2 class="artist-content__songs-track-title">The unforgiven</h2>
                   <h2 class="artist-content__songs-track-views">1,000,500,025</h2>
                 </div>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/related-album-cover-4.jpg" alt="" class="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">3</h2>
                   <h2 class="artist-content__songs-track-title">Enter sandman</h2>
                   <h2 class="artist-content__songs-track-views">955,455,122</h2>
                 </div>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/related-album-cover-1.jpg" alt="" class="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">4</h2>
                   <h2 class="artist-content__songs-track-title">Creeping Death</h2>
                   <h2 class="artist-content__songs-track-views">865,652,748</h2>
                 </div>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/related-album-cover-2.jpg" alt="" class="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">5</h2>
                   <h2 class="artist-content__songs-track-title">One</h2>
                   <h2 class="artist-content__songs-track-views">700,658,123</h2>
                 </div>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/related-album-cover-1.jpg" alt="" class="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">6</h2>
                   <h2 class="artist-content__songs-track-title">Fade to black</h2>
                   <h2 class="artist-content__songs-track-views">650,658,000</h2>
                 </div>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/related-album-cover-2.jpg" alt="" class="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">7</h2>
                   <h2 class="artist-content__songs-track-title">Blackened</h2>
                   <h2 class="artist-content__songs-track-views">400,222,123</h2>
                 </div>
-                <div class="artist-content__popular-song-row bottom-divisor--light-bg pointer">
+                <div class="artist-content__popular-song-row bottom-divisor--light-bg">
                   <img src="./img/album-cover.jpg" alt="" class="songs-track-img" />
                   <h2 class="artist-content__songs-track-position">8</h2>
                   <h2 class="artist-content__songs-track-title">Orion</h2>
@@ -335,31 +322,31 @@
               <h2>RELATED ARTISTS</h2>
             </span>
             <div class="artist-content__artists-wrapper">
-              <div class="artist-content__related-artist-item pointer">
+              <div class="artist-content__related-artist-item">
                 <img src="./img/related-artist-1.jpg" alt="" class="artist-content__related-artist-img" />
                 <h2>Death</h2>
               </div>
-              <div class="artist-content__related-artist-item pointer">
+              <div class="artist-content__related-artist-item">
                 <img src="./img/related-artist-2.jpg" alt="" class="artist-content__related-artist-img" />
                 <h2>David Bowie</h2>
               </div>
-              <div class="artist-content__related-artist-item pointer">
+              <div class="artist-content__related-artist-item">
                 <img src="./img/related-artist-3.jpg" alt="" class="artist-content__related-artist-img" />
                 <h2>Incubus</h2>
               </div>
-              <div class="artist-content__related-artist-item pointer">
+              <div class="artist-content__related-artist-item">
                 <img src="./img/related-artist-4.jpg" alt="" class="artist-content__related-artist-img" />
                 <h2>Joji</h2>
               </div>
-              <div class="artist-content__related-artist-item pointer">
+              <div class="artist-content__related-artist-item">
                 <img src="./img/related-artist-5.jpg" alt="" class="artist-content__related-artist-img" />
                 <h2>Dream Theater</h2>
               </div>
-              <div class="artist-content__related-artist-item pointer">
+              <div class="artist-content__related-artist-item">
                 <img src="./img/related-artist-6.jpg" alt="" class="artist-content__related-artist-img" />
                 <h2>Sepultura</h2>
               </div>
-              <div class="artist-content__related-artist-item pointer">
+              <div class="artist-content__related-artist-item">
                 <img src="./img/related-artist-7.jpg" alt="" class="artist-content__related-artist-img" />
                 <h2>AB'S</h2>
               </div>
@@ -374,17 +361,13 @@
           </div>
           <div class="artist-content__discography-slider">
             <div class="artist-content__slider-item">
-              <img
-                src="./img/album-cover.jpg"
-                class="artist-content__slider-album-cover pointer"
-                alt="master of puppets"
-              />
+              <img src="./img/album-cover.jpg" class="artist-content__slider-album-cover" alt="master of puppets" />
               <h2>Master of Puppets</h2>
             </div>
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-1.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Ride the Lightning</h2>
@@ -392,7 +375,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-2.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>...And justice for all</h2>
@@ -400,7 +383,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-3.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Kill 'Em All</h2>
@@ -408,7 +391,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-4.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Metallica</h2>
@@ -416,7 +399,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-5.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Load</h2>
@@ -424,7 +407,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-6.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Reload</h2>
@@ -433,7 +416,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-7.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>S&M</h2>
@@ -442,7 +425,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-8.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>72 Seasons</h2>
@@ -450,7 +433,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-9.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Hardwired...to self-destruct</h2>
@@ -458,7 +441,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-10.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Garage Inc.</h2>
@@ -466,7 +449,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-11.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>Death Magnetic</h2>
@@ -474,7 +457,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-12.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>St. Anger</h2>
@@ -482,7 +465,7 @@
             <div class="artist-content__slider-item">
               <img
                 src="./img/related-album-cover-13.jpg"
-                class="artist-content__slider-album-cover pointer"
+                class="artist-content__slider-album-cover"
                 alt="master of puppets"
               />
               <h2>S&M 2</h2>
@@ -502,10 +485,8 @@
               </span>
 
               <span class="artist-content__playing-albums-buttons">
-                <button class="button button--play pointer artist-content__playing-album-button--centralize">
-                  SAVE
-                </button>
-                <button class="button--circle pointer">
+                <button class="button button--play artist-content__playing-album-button--centralize">SAVE</button>
+                <button class="button--circle">
                   <i class="fa-solid fa-ellipsis"></i>
                 </button>
               </span>
@@ -527,7 +508,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>1</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   Battery
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -536,7 +517,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>2</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   Master of Puppets
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -545,7 +526,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>3</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   The Thing That Should Not Be
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -554,7 +535,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>4</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   Welcome Home (Sanitarium)
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -563,7 +544,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>5</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   Disposable Heroes
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -572,7 +553,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>6</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   Lepper Messiah
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -581,7 +562,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>7</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   Orion
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -590,7 +571,7 @@
               </tr>
               <tr class="bottom-divisor--light-bg">
                 <td>8</td>
-                <td class="artist-content__playing-album-song-name-wrapper pointer">
+                <td class="artist-content__playing-album-song-name-wrapper">
                   Damage, Inc.
                   <label for="" class="label-explicit-content">EXPLICIT</label>
                 </td>
@@ -606,9 +587,9 @@
     <footer class="player">
       <div class="player__controller">
         <div class="player__buttons">
-          <i class="fa-solid fa-backward-step icons-medium pointer player__icon player__element--mobile-disable"></i>
-          <i class="fa-solid fa-play player__icon pointer"></i>
-          <i class="fa-solid fa-forward-step icons-medium pointer player__icon"></i>
+          <i class="fa-solid fa-backward-step icons-medium player__icon player__element--mobile-disable"></i>
+          <i class="fa-solid fa-play player__icon"></i>
+          <i class="fa-solid fa-forward-step icons-medium player__icon"></i>
         </div>
         <span class="player__song-timelapse player__element--mobile-disable">
           <small>0:05</small>
@@ -635,8 +616,8 @@
       </div>
 
       <div class="player__interactions-controller player__element--mobile-disable">
-        <i class="fa-solid fa-shuffle pointer"></i>
-        <i class="fa-solid fa-repeat pointer"></i>
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-repeat"></i>
         <i class="fa-solid fa-volume-high"></i>
       </div>
     </footer>
