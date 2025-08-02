@@ -202,17 +202,15 @@ ul > li {
   z-index: 1;
   right: 20px;
   top: 50px;
-  /* box-shadow: 2px 0 8px rgba(0, 0, 0, 1.15); */
-  /* border: .5px solid #888787; */
-  border: .5px solid var(--main-background-color-transparent);
+  border: 0.5px solid var(--main-background-color-transparent);
 }
 
-.header__profile-menu-img{
-  width: 100px;
+.header__profile-menu-img {
+  width: 80px;
   margin: 0 auto;
 }
 
-.header__profile-menu-data-wrapper{
+.header__profile-menu-data-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,8 +218,8 @@ ul > li {
   padding-bottom: 22px;
 }
 
-.header__profile-menu-data-wrapper h3{
-  font-size: .7rem;
+.header__profile-menu-data-wrapper h3 {
+  font-size: 0.7rem;
   color: var(--font-color);
 }
 
@@ -230,8 +228,9 @@ ul > li {
   flex-direction: column;
   gap: 14px;
   padding-bottom: 22px;
+  color: var(--font-color);
 }
-.header__user-menu-items li{
+.header__user-menu-items li {
   display: flex;
   gap: 12px;
 }
@@ -470,12 +469,7 @@ ul > li {
 .artist-content__profile-interactions {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 15px;
-}
-
-.artist-content__profile-interactions button {
-  margin: 0 10px 0 0;
+  gap: 4px;
 }
 
 .artist-content__profile-statistics {
@@ -845,9 +839,9 @@ i {
   .artist-content__info-wrapper {
     gap: 12px;
   }
-
   .artist-content__profile-interactions {
-    padding: 0;
+    padding-left: 8px;
+    gap: 8px;
   }
 
   .artist-content__profile-statistics {
