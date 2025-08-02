@@ -235,7 +235,7 @@ ul > li {
   gap: 12px;
 }
 .layout {
-  width: 100dvw;
+  
   display: flex;
   flex-direction: column;
 }
@@ -274,7 +274,7 @@ ul > li {
 }
 
 .sidebar {
-  width: 100dvw;
+  width: 100%;
   min-height: 100dvh;
   top: 0;
   bottom: 0;
