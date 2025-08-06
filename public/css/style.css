@@ -23,7 +23,7 @@ body {
   color: var(--font-color);
 }
 
-body.sidebar-open {
+body:has(#toggle-sidebar:checked) {
   overflow: hidden;
 }
 
@@ -33,11 +33,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* i,
-img{
-  cursor: pointer
-} */
 
 a {
   text-decoration: none;
@@ -1073,7 +1068,9 @@ i {
     min-width: 300px;
     box-shadow: none;
   }
-
+  body:has(#toggle-sidebar) {
+    overflow: scroll;
+  }
   .sidebar__header {
     display: none;
   }
