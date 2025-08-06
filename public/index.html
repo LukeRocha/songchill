@@ -27,7 +27,9 @@
         <div class="header__controller">
           <div class="header__search">
             <a href="#"><i class="icon header__icon fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><input type="text" class="header__input" placeholder="Search for chill" /></a>
+            <a href="#"
+              ><input type="text" class="header__input" placeholder="Search for chill"
+            /></a>
           </div>
           <nav class="header__user-menu">
             <a href="#"><i class="icon icon-medium fa-solid fa-bell"></i></a>
@@ -37,23 +39,52 @@
             </label>
             <ul class="header__profile-menu">
               <div class="header__profile-menu-data-wrapper bottom-divisor--light-bg">
+                <a href="#">
                 <img src="./img/profile-picture.png" alt="" class="header__profile-menu-img" />
-                <h2>Lucas Rocha</h2>
-                <small>@négassoné</small>
-                <h3>lucas@mail.com</h3>
+                </a>
+                <a href="#">
+                  <h2>Lucas Rocha</h2>
+                </a>
+                <a href="#">
+                  <small>@négassoné</small>
+                </a>
+                <a href="#">
+                  <h3>lucas@mail.com</h3>
+                </a>
               </div>
               <span class="header__user-menu-items bottom-divisor--light-bg">
-                <li class="header__menu-item"><i class="fa-regular fa-user" style="color: #ffffff"></i>Account</li>
-                <li class="header__menu-item"><i class="fa-solid fa-sliders" style="color: #ffffff"></i>Settings</li>
-                <li class="header__menu-item"><i class="fa-solid fa-cart-plus" style="color: #ffffff"></i>Plans</li>
+                <a href="#">
+                  <li class="header__menu-item">
+                    <i class="fa-regular fa-user" style="color: #ffffff"></i>
+                    Account
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="header__menu-item">
+                    <i class="fa-solid fa-sliders" style="color: #ffffff"></i>
+                    Settings
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="header__menu-item">
+                    <i class="fa-solid fa-cart-plus" style="color: #ffffff"></i>
+                    Plans
+                  </li>
+                </a>
               </span>
               <span class="header__user-menu-items bottom-divisor--light-bg">
-                <li class="header__menu-item">
-                  <i class="fa-regular fa-circle-question" style="color: #ffffff"></i>Support
-                </li>
-                <li class="header__menu-item">
-                  <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff"></i>Log out
-                </li>
+                <a href="#">
+                  <li class="header__menu-item">
+                    <i class="fa-regular fa-circle-question" style="color: #ffffff"></i>
+                    Support
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="header__menu-item">
+                    <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff"></i>
+                    Log out
+                  </li>
+                </a>
               </span>
             </ul>
           </nav>
@@ -79,19 +110,27 @@
             <input type="checkbox" id="toggle-main" hidden />
             <label for="toggle-main" class="sidebar__feature-wrapper">
               <h2 class="sidebar__title">MAIN</h2>
-              <a class="sidebar__a"><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i></a>
+              <a class="sidebar__a"
+                ><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i
+              ></a>
             </label>
             <div class="sidebar__items-wrapper">
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"><i class="fa-regular fa-window-restore icon desktop-icon"></i></a>
+                <a href="#" class="sidebar__a"
+                  ><i class="fa-regular fa-window-restore icon desktop-icon"></i
+                ></a>
                 <p class="">Browse</p>
               </span>
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"><i class="fa-solid fa-user-group icon desktop-icon"></i></a>
+                <a href="#" class="sidebar__a"
+                  ><i class="fa-solid fa-user-group icon desktop-icon"></i
+                ></a>
                 <p class="">Activity</p>
               </span>
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"><i class="fa-solid fa-radio icon desktop-icon"></i></a>
+                <a href="#" class="sidebar__a"
+                  ><i class="fa-solid fa-radio icon desktop-icon"></i
+                ></a>
                 <p>Radio</p>
               </span>
             </div>
@@ -101,7 +140,9 @@
             <input type="checkbox" id="toggle-your-music" hidden />
             <label for="toggle-your-music" class="sidebar__feature-wrapper">
               <h2 class="sidebar__title">YOUR MUSIC</h2>
-              <a for="trigger" class="sidebar__a"><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i></a>
+              <a for="trigger" class="sidebar__a"
+                ><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i
+              ></a>
             </label>
             <div class="sidebar__items-wrapper">
               <span class="sidebar__item hover-border-right">
@@ -117,7 +158,9 @@
                 <p>Artists</p>
               </span>
               <span class="sidebar__item hover-border-right">
-                <a href="#" class="sidebar__a"><i class="fa-solid fa-file icon desktop-icon"></i></a>
+                <a href="#" class="sidebar__a"
+                  ><i class="fa-solid fa-file icon desktop-icon"></i
+                ></a>
                 <p>Local Files</p>
               </span>
             </div>
@@ -127,7 +170,9 @@
             <input type="checkbox" id="toggle-playlist" hidden />
             <label for="toggle-playlist" class="sidebar__feature-wrapper">
               <h2 class="sidebar__title">PLAYLIST</h2>
-              <a for="trigger" class="sidebar__a"><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i></a>
+              <a for="trigger" class="sidebar__a"
+                ><i class="fa-solid fa-chevron-down icon--small icon-disabled"></i
+              ></a>
             </label>
             <div class="sidebar__items-wrapper">
               <span class="sidebar__item hover-border-right">
@@ -323,31 +368,59 @@
             </span>
             <div class="artist-content__artists-wrapper">
               <div class="artist-content__related-artist-item">
-                <img src="./img/related-artist-1.jpg" alt="" class="artist-content__related-artist-img" />
+                <img
+                  src="./img/related-artist-1.jpg"
+                  alt=""
+                  class="artist-content__related-artist-img"
+                />
                 <h2>Death</h2>
               </div>
               <div class="artist-content__related-artist-item">
-                <img src="./img/related-artist-2.jpg" alt="" class="artist-content__related-artist-img" />
+                <img
+                  src="./img/related-artist-2.jpg"
+                  alt=""
+                  class="artist-content__related-artist-img"
+                />
                 <h2>David Bowie</h2>
               </div>
               <div class="artist-content__related-artist-item">
-                <img src="./img/related-artist-3.jpg" alt="" class="artist-content__related-artist-img" />
+                <img
+                  src="./img/related-artist-3.jpg"
+                  alt=""
+                  class="artist-content__related-artist-img"
+                />
                 <h2>Incubus</h2>
               </div>
               <div class="artist-content__related-artist-item">
-                <img src="./img/related-artist-4.jpg" alt="" class="artist-content__related-artist-img" />
+                <img
+                  src="./img/related-artist-4.jpg"
+                  alt=""
+                  class="artist-content__related-artist-img"
+                />
                 <h2>Joji</h2>
               </div>
               <div class="artist-content__related-artist-item">
-                <img src="./img/related-artist-5.jpg" alt="" class="artist-content__related-artist-img" />
+                <img
+                  src="./img/related-artist-5.jpg"
+                  alt=""
+                  class="artist-content__related-artist-img"
+                />
                 <h2>Dream Theater</h2>
               </div>
               <div class="artist-content__related-artist-item">
-                <img src="./img/related-artist-6.jpg" alt="" class="artist-content__related-artist-img" />
+                <img
+                  src="./img/related-artist-6.jpg"
+                  alt=""
+                  class="artist-content__related-artist-img"
+                />
                 <h2>Sepultura</h2>
               </div>
               <div class="artist-content__related-artist-item">
-                <img src="./img/related-artist-7.jpg" alt="" class="artist-content__related-artist-img" />
+                <img
+                  src="./img/related-artist-7.jpg"
+                  alt=""
+                  class="artist-content__related-artist-img"
+                />
                 <h2>AB'S</h2>
               </div>
             </div>
@@ -361,7 +434,11 @@
           </div>
           <div class="artist-content__discography-slider">
             <div class="artist-content__slider-item">
-              <img src="./img/album-cover.jpg" class="artist-content__slider-album-cover" alt="master of puppets" />
+              <img
+                src="./img/album-cover.jpg"
+                class="artist-content__slider-album-cover"
+                alt="master of puppets"
+              />
               <h2>Master of Puppets</h2>
             </div>
             <div class="artist-content__slider-item">
@@ -485,7 +562,11 @@
               </span>
 
               <span class="artist-content__playing-albums-buttons">
-                <button class="button button--play artist-content__playing-album-button--centralize">SAVE</button>
+                <button
+                  class="button button--play artist-content__playing-album-button--centralize"
+                >
+                  SAVE
+                </button>
                 <button class="button--circle">
                   <i class="fa-solid fa-ellipsis"></i>
                 </button>
@@ -587,7 +668,9 @@
     <footer class="player">
       <div class="player__controller">
         <div class="player__buttons">
-          <i class="fa-solid fa-backward-step icons-medium player__icon player__element--mobile-disable"></i>
+          <i
+            class="fa-solid fa-backward-step icons-medium player__icon player__element--mobile-disable"
+          ></i>
           <i class="fa-solid fa-play player__icon"></i>
           <i class="fa-solid fa-forward-step icons-medium player__icon"></i>
         </div>
@@ -610,7 +693,9 @@
           <h1>Master of puppets</h1>
           <span class="player__playing-artist-wrapper">
             <h2>Metallica</h2>
-            <h2 class="player__element--mobile-disable player__element--desktop">- Master of puppets</h2>
+            <h2 class="player__element--mobile-disable player__element--desktop">
+              - Master of puppets
+            </h2>
           </span>
         </span>
       </div>

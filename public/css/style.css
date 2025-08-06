@@ -34,21 +34,14 @@ body {
   padding: 0;
 }
 
-a,
-input[type="checkbox"],
-input[type="radio"],
-label[for],
-[role="button"],
-p,
-li,
-img,
-small,
-h2,
-td,
-i,
-h3,
-[tabindex]:not([tabindex="-1"]) {
-  cursor: pointer;
+/* i,
+img{
+  cursor: pointer
+} */
+
+a {
+  text-decoration: none;
+  color: var(--font-color-light);
 }
 
 .logo {
@@ -566,7 +559,7 @@ h3,
   color: var(--font-color-light);
 }
 
-.artist-content__popular-song-row h2,
+.artist-content__popular-song-row a,
 i {
   color: var(--font-color-light);
 }
