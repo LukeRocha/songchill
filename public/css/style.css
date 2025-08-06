@@ -475,6 +475,7 @@ header img {
 }
 
 .artist-content__profile-title {
+  cursor: default;
   gap: 14px;
   display: flex;
   flex-direction: column;
@@ -1068,9 +1069,7 @@ i {
     min-width: 300px;
     box-shadow: none;
   }
-  body:has(#toggle-sidebar) {
-    overflow: scroll;
-  }
+
   .sidebar__header {
     display: none;
   }
