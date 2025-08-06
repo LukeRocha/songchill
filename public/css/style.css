@@ -146,6 +146,10 @@ a {
   background-color: var(--secondary-background-color);
 }
 
+header img {
+  cursor: pointer;
+}
+
 .header__menu {
   display: flex;
   justify-content: space-between;
@@ -366,6 +370,7 @@ a {
 .sidebar__a {
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
 
 .sidebar__feature-item {
@@ -428,6 +433,7 @@ a {
 .sidebar__list-item {
   display: flex;
   align-items: center;
+  color: var(--font-color);
   gap: 8px;
 }
 
