@@ -237,7 +237,7 @@ header img {
   text-align: center;
   width: 100%;
 }
-.header__profile-item{
+.header__profile-item {
   padding: 4px;
   width: 100%;
 }
@@ -844,24 +844,27 @@ i {
 }
 
 @media (max-width: 240px) {
-  .header__menu{
+  .header__controller{
+    display: none;
+  }
+  .header__menu {
     justify-content: center;
   }
-  .logo{
+  .logo {
     display: none;
   }
 }
 
-@media(max-width: 273px){
-  .header__profile-picture{
+@media (max-width: 273px) {
+  .header__profile-picture {
     display: none;
   }
 }
 
-@media (max-width: 360px){
-.icon--tiny-disable {
-  display: none;
-}
+@media (max-width: 360px) {
+  .icon--tiny-disable {
+    display: none;
+  }
 }
 
 @media (min-width: 650px) {
@@ -966,7 +969,7 @@ i {
     color: #fff;
   }
 
-  .header__search i{
+  .header__search i {
     padding: 0;
   }
 
