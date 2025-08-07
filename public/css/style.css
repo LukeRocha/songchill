@@ -843,6 +843,27 @@ i {
   width: 50px;
 }
 
+@media (max-width: 240px) {
+  .header__menu{
+    justify-content: center;
+  }
+  .logo{
+    display: none;
+  }
+}
+
+@media(max-width: 273px){
+  .header__profile-picture{
+    display: none;
+  }
+}
+
+@media (max-width: 360px){
+.icon--tiny-disable {
+  display: none;
+}
+}
+
 @media (min-width: 650px) {
   .sidebar {
     width: 350px;
