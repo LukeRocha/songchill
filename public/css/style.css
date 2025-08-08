@@ -373,6 +373,19 @@ header img {
   height: 32px;
 }
 
+.sidebar__feature input[type="checkbox"]:checked + label + .sidebar__items-wrapper {
+  display: flex;
+}
+
+.sidebar__feature-wrapper .fa-chevron-down {
+  /* transition: transform 0.3s ease; */
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.sidebar__feature input[type="checkbox"]:checked + label .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
 .sidebar__title {
   font-size: 0.9rem;
   white-space: nowrap;
@@ -383,10 +396,6 @@ header img {
   flex-direction: column;
   gap: 12px;
   width: 100%;
-}
-
-.sidebar__feature input[type="checkbox"]:checked + label + .sidebar__items-wrapper {
-  display: flex;
 }
 
 .sidebar__item {
