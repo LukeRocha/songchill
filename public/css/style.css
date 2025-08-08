@@ -287,6 +287,11 @@ header img {
   box-shadow: 1px 0 8px rgba(0, 0, 0, 1.85);
 }
 
+#toggle-sidebar:checked ~ .sidebar--backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .sidebar-backdrop {
   pointer-events: none;
 }
