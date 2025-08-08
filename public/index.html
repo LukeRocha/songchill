@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Songchill, the best song app UI made withou any javascript, only pure css + html.">
     <title>Songchill</title>
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.ico" style="color: purple;">
+    <link rel="preconnect" href="https://kit.fontawesome.com/">
     <script src="https://kit.fontawesome.com/9ed3108268.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,50 +29,50 @@
       </div>
       <div class="header__controller">
         <div class="header__search">
-          <a href="#"
+          <a href="#" aria-label="glass " aria-label="search icon"
             ><i class="icon header__icon fa-solid fa-magnifying-glass icon--tiny-disable"></i
           ></a>
-          <a href="#"><input type="text" class="header__input" placeholder="Search for chill" /></a>
+          <input type="text" class="header__input" placeholder="Search for chill" />
         </div>
         <nav class="header__user-menu">
-          <a href="#"><i class="icon icon-medium fa-solid fa-bell icon--tiny-disable"></i></a>
+          <a href="#" aria-label="notifications feature menu"><i class="icon icon-medium fa-solid fa-bell icon--tiny-disable"></i></a>
           <input type="checkbox" id="toggle-user-menu" hidden />
           <label for="toggle-user-menu" class="">
             <img class="header__profile-picture" src="./img/profile-picture.png" alt="" />
           </label>
           <ul class="header__profile-menu">
             <div class="header__profile-menu-data-wrapper bottom-divisor--light-bg">
-              <a href="#">
+              <a href="#" aria-label="profile picture">
                 <img src="./img/profile-picture.png" alt="" class="header__profile-menu-img" />
               </a>
-              <a href="#">
+              <a href="#" aria-label="user nav menu itens">
                 <h2 class="header__profile-item">Lucas Rocha</h2>
                 <h2 class="header__profile-item">@négassoné</h2>
               </a>
-              <a href="#">
-                <h3 class="header__profile-item">lucas@mail.com</h3>
+              <a href="#" aria-label="user e-mail">
+                <h2 class="header__profile-item">lucas@mail.com</h2>
               </a>
             </div>
             <div class="header__user-menu-items bottom-divisor--light-bg">
-              <a href="#" class="header__menu-item">
+              <a href="#" class="header__menu-item" aria-label="account data link">
                 <i class="fa-regular fa-user" style="color: #ffffff"></i>
                 Account
               </a>
-              <a href="#" class="header__menu-item">
+              <a href="#" class="header__menu-item" aria-label="account settings link">
                 <i class="fa-solid fa-sliders" style="color: #ffffff"></i>
                 Settings
               </a>
-              <a href="#" class="header__menu-item">
+              <a href="#" class="header__menu-item" aria-label="plans link">
                 <i class="fa-solid fa-cart-plus" style="color: #ffffff"></i>
                 Plans
               </a>
             </div>
             <span class="header__user-menu-items bottom-divisor--light-bg">
-              <a href="#" class="header__menu-item">
+              <a href="#" class="header__menu-item" aria-label="support area link">
                 <i class="fa-regular fa-circle-question" style="color: #ffffff"></i>
                 Support
               </a>
-              <a href="#" class="header__menu-item">
+              <a href="#" class="header__menu-item" aria-label="log out">
                 <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff"></i>
                 Log out
               </a>
@@ -100,25 +103,25 @@
             <input type="checkbox" id="toggle-main" hidden />
             <label for="toggle-main" class="sidebar__feature-wrapper">
               <h2 class="sidebar__title">MAIN</h2>
-              <a class="sidebar__a">
+              <a class="sidebar__a" aria-label="sidebar chevron icon">
                 <i class="fa-solid fa-chevron-down icon--small"></i>
               </a>
             </label>
             <div class="sidebar__items-wrapper">
               <span class="sidebar__item">
-                <a href="#" class="sidebar__a">
+                <a href="#" class="sidebar__a" aria-label="browse account content link">
                   <i class="fa-regular fa-window-restore icon desktop-icon"></i>
                   Browse
                 </a>
               </span>
               <span class="sidebar__item">
-                <a href="#" class="sidebar__a">
+                <a href="#" class="sidebar__a" aria-label="account activity link">
                   <i class="fa-solid fa-user-group icon desktop-icon"></i>
                   Activity
                 </a>
               </span>
               <span class="sidebar__item">
-                <a href="#" class="sidebar__a">
+                <a href="#" class="sidebar__a" aria-label="radio feature link">
                   <i class="fa-solid fa-radio icon desktop-icon"></i>
                   Radio
                 </a>
@@ -130,32 +133,32 @@
             <input type="checkbox" id="toggle-your-music" hidden />
             <label for="toggle-your-music" class="sidebar__feature-wrapper">
               <h2 class="sidebar__title">YOUR MUSIC</h2>
-              <a for="trigger" class="sidebar__a">
+              <a for="trigger" class="sidebar__a" aria-label="your music feature link"> 
                 <i class="fa-solid fa-chevron-down icon--small"></i>
               </a>
             </label>
 
             <div class="sidebar__items-wrapper">
               <span class="sidebar__item">
-                <a href="#" class="sidebar__a">
+                <a href="#" class="sidebar__a" aria-label="your songs link">
                   <i class="fa-solid fa-headphones icon desktop-icon"></i>
                   Songs
                 </a>
               </span>
               <span class="sidebar__item">
-                <a href="#" class="sidebar__a">
+                <a href="#" class="sidebar__a" aria-label="your music albums feature link">
                   <i class="fa-solid fa-music icon desktop-icon"></i>
                   Albums
                 </a>
               </span>
               <span class="sidebar__item">
-                <a href="#" class="sidebar__a">
+                <a href="#" class="sidebar__a" aria-label="your favourite artists link">
                   <i class="fa-solid fa-user icon desktop-icon"></i>
                   Artists
                 </a>
               </span>
               <span class="sidebar__item">
-                <a href="#" class="sidebar__a">
+                <a href="#" class="sidebar__a" aria-label="your updated local files link">
                   <i class="fa-solid fa-file icon desktop-icon"></i>
                   Local Files
                 </a>
@@ -166,7 +169,7 @@
 
         <div class="sidebar__playlist">
           <span class="sidebar__playlist-new">
-            <a href="#" class="sidebar__a">
+            <a href="#" class="sidebar__a" aria-label="link to create a playlist">
               <i class="fa-solid fa-plus icon icon-medium"></i>
               <h2>New Playlist</h2>
             </a>
@@ -175,25 +178,25 @@
             <div class="sidebar__playlist-playing">
               <img src="./img/album-cover.jpg" class="img-thumb--small" alt="" />
               <span class="sidebar__playlist-info">
-                <a href="#">
+                <a href="#" aria-label="playing playlist link">
                   <h2 class="sidebar__playlist-title">Thrash metal</h2>
-                  <h4 class="sidebar__playlist-amount">19 songs</h4>
+                  <h2 class="sidebar__playlist-amount">19 songs</h2>
                 </a>
               </span>
             </div>
             <span class="sidebar__playlist-added">
-              <a href="#" class="icon">
+              <a href="#" class="icon" aria-label="pause button">
                 <i class="fa-solid fa-pause icon icon-medium"></i>
               </a>
             </span>
           </div>
           <ul class="sidebar__list">
             <li>
-              <a href="#" class="sidebar__list-item">
+              <a href="#" class="sidebar__list-item" aria-label="playlist link">
                 <img src="./img/playlist-img.jpg" class="img-thumb--tiny" alt="" />
                 <span class="sidebar__list-info">
                   <h2>Party</h2>
-                  <h4>Lucas Rocha</h4>
+                  <h2>Lucas Rocha</h2>
                 </span>
               </a>
             </li>
@@ -201,28 +204,28 @@
               <img src="./img/playlist-img3.jpg" class="img-thumb--tiny" alt="" />
               <span class="sidebar__list-info">
                 <h2>Studying</h2>
-                <h4>Lucas Rocha</h4>
+                <h2>Lucas Rocha</h2>
               </span>
             </a>
-            <a href="#" class="sidebar__list-item">
+            <a href="#" class="sidebar__list-item" aria-label="playlist link">
               <img src="./img/playlist-img4.jpg" class="img-thumb--tiny" alt="" />
               <span class="sidebar__list-info">
                 <h2>Metal</h2>
-                <h4>Shared</h4>
+                <h2>Shared</h2>
               </span>
             </a>
-            <a href="#" class="sidebar__list-item">
+            <a href="#" class="sidebar__list-item" aria-label="playlist link">
               <img src="./img/img-playlist5.jpg" class="img-thumb--tiny" alt="" />
               <span class="sidebar__list-info">
                 <h2>Chill</h2>
-                <h4>Lucas Rocha</h4>
+                <h2>Lucas Rocha</h2>
               </span>
             </a>
-            <a href="#" class="sidebar__list-item">
+            <a href="#" class="sidebar__list-item" aria-label="playlist link">
               <img src="./img/playlist-img2.jpg" class="img-thumb--tiny" alt="" />
               <span class="sidebar__list-info">
                 <h2>Traveling</h2>
-                <h4>Shared</h4>
+                <h2>Shared</h2>
               </span>
             </a>
           </ul>
@@ -239,17 +242,17 @@
               <div class="artist-content__info-wrapper">
                 <div class="artist-content__profile-title">
                   <h2>Artist</h2>
-                  <a href="#">
+                  <a href="#" aria-label="artist link">
                     <h1>METALLICA</h1>
                   </a>
                 </div>
                 <div class="artist-content__profile-interactions">
-                  <button class="button button--play">
+                  <button class="button button--play" aria-label="play">
                     <i class="fa-solid fa-play"></i>
                     PLAY
                   </button>
-                  <button class="button">FOLLOW</button>
-                  <button class="button--circle">
+                  <button class="button" aria-label="follow">FOLLOW</button>
+                  <button class="button--circle" aria-label="circular">
                     <i class="fa-solid fa-ellipsis"></i>
                   </button>
                 </div>
@@ -262,9 +265,9 @@
           </div>
           <section class="artist-content__menu-tabs">
             <nav class="artist-content__nav-tabs">
-              <a href="#" class="artist-content__tabs-title">OVERVIEW</a>
-              <a href="#" class="artist-content__tabs-title">BIOGRAPHY</a>
-              <a href="#" class="artist-content__tabs-title">ALBUMS</a>
+              <a href="#" class="artist-content__tabs-title" aria-label="artist navigation tab link to overview">OVERVIEW</a>
+              <a href="#" class="artist-content__tabs-title" aria-label="artist navigation tab link to biography">BIOGRAPHY</a>
+              <a href="#" class="artist-content__tabs-title" aria-label="artist navigation tab link to albums">ALBUMS</a>
             </nav>
           </section>
         </div>
@@ -279,7 +282,7 @@
                   <img src="./img/related-album-cover-8.jpg" alt="" class="" />
                   <span class="artist-content__latest-release-info">
                     <h2>72 Seasons</h2>
-                    <h4>April 14 - 2023</h4>
+                    <h2>April 14 - 2023</h2>
                   </span>
                 </div>
               </div>
@@ -534,17 +537,17 @@
             </span>
             <div class="artist-content__playing-album-artist-data">
               <span class="artist-content__playing-album-title">
-                <h4>1986</h4>
+                <h2>1986</h2>
                 <h2>Master of Puppets</h2>
               </span>
 
               <span class="artist-content__playing-albums-buttons">
                 <button
                   class="button button--play artist-content__playing-album-button--centralize"
-                >
+                 aria-label="save" >
                   SAVE
                 </button>
-                <button class="button--circle">
+                <button class="button--circle" aria-label="circular">
                   <i class="fa-solid fa-ellipsis"></i>
                 </button>
               </span>

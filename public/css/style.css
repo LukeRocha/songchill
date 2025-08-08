@@ -670,7 +670,7 @@ i {
 }
 
 .artist-content__related-artists-title h2 {
-  padding: 12px;
+  padding: 12px 0;
 }
 .artist-content__artists-wrapper {
   display: grid;
