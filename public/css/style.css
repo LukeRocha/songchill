@@ -23,12 +23,12 @@ body {
   color: var(--font-color);
 }
 
-body:has(#toggle-sidebar:checked) {
-  overflow: hidden;
+.sidebar {
+  overflow-y: auto;
 }
 
-.sidebar:has(#toggle-sidebar:checked) {
-  overflow-y: auto !important;
+body:has(#toggle-sidebar:checked) {
+  overflow: hidden;
 }
 
 html,
