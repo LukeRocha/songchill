@@ -27,6 +27,10 @@ body:has(#toggle-sidebar:checked) {
   overflow: hidden;
 }
 
+.sidebar:has(#toggle-sidebar:checked) {
+  overflow-y: auto !important;
+}
+
 html,
 body {
   height: 100%;
@@ -131,7 +135,14 @@ a {
 }
 
 .img-thumb--tiny {
-  width: 2rem;
+  width: 42px;
+  height: 42px;
+  height: 100%;
+}
+
+.img-thumb--small{
+  width: 4em;
+  padding: 8px 0;
 }
 
 .img-thumb--medium {
@@ -341,7 +352,7 @@ header img {
   gap: 32px;
   align-items: flex-start;
   align-content: flex-start;
-  padding-bottom: 45px;
+  /* padding-bottom: 35px; */
 }
 
 .sidebar__feature {
@@ -391,6 +402,7 @@ header img {
   text-align: left;
   gap: 8px;
   width: 100%;
+  height: 100%;
 }
 
 .sidebar__feature-item {
@@ -408,7 +420,8 @@ header img {
   align-items: center;
   gap: 12px;
   color: var(--font-color-light);
-  padding: 4px 0 20px 8px;
+    border-top: 1px solid var(--border-divisor-color);
+  height: 64px;
   border-bottom: none;
 }
 
@@ -417,7 +430,7 @@ header img {
   justify-content: space-between;
   border-bottom: 1px solid var(--border-divisor-color);
   border-top: 1px solid var(--border-divisor-color);
-  padding: 1px;
+  
 }
 
 .sidebar__playlist-playing {
@@ -425,6 +438,8 @@ header img {
   align-items: center;
   gap: 12px;
   color: var(--font-color-light);
+  cursor: pointer;
+  width: 100%;
 }
 
 .sidebar__song-container {
@@ -440,7 +455,8 @@ header img {
 .sidebar__playlist-added {
   display: flex;
   align-items: center;
-  padding-right: 14px;
+  /* padding-right: 14px; */
+  height: 100%;
 }
 
 .sidebar__list {
@@ -449,12 +465,17 @@ header img {
   gap: 12px;
   padding-top: 18px;
 }
+sidebar__list li{
+  height: 100%;
+}
 
 .sidebar__list-item {
   display: flex;
   align-items: center;
   color: var(--font-color);
   gap: 8px;
+  width: 100%;
+  height: 100%;
 }
 
 /* Artist content */
