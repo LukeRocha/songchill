@@ -574,7 +574,10 @@ sidebar__list li {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 15px;
+}
+
+.artist-content__block-title {
+  padding: 12px 0;
 }
 
 .artist-content__latest-release {
@@ -615,7 +618,6 @@ i {
 .artist-content__songs-track-img {
   display: flex;
   justify-content: flex-start;
-
   width: 50px;
   padding: 0 8px 8px 4px;
 }
@@ -646,10 +648,12 @@ i {
 .artist-content__related-artists {
   width: auto;
   height: auto;
-  padding: 15px;
   background-color: var(--main-background-color);
 }
 
+.artist-content__related-artists-title h2 {
+  padding: 12px;
+}
 .artist-content__artists-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -680,6 +684,10 @@ i {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.artist-content__discography-title {
+  padding: 12px;
 }
 
 .artist-content__discography-slider {
@@ -1087,13 +1095,14 @@ i {
   }
 
   .artist-content__related-artists {
-    max-width: 100%;
+    max-width: 38%;
   }
   .artist-content__related-artist-item {
     width: 100%;
   }
   .artist-content__feature-wrapper {
     flex-direction: row;
+    gap: 32px;
   }
 
   .artist-content__discography {
