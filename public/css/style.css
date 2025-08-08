@@ -755,22 +755,25 @@ i {
 .artist-content__playing-album-info {
   display: flex;
   align-items: flex-end;
-  gap: 25px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .artist-content__playing-album-artist-data {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 12px;
+  width: 40%;
 }
 
 .artist-content__playing-album-artist-data h2 {
   font-size: larger;
+  white-space: wrap;
 }
 
 .artist-content__playing-album-info img {
-  width: 160px;
+  width: 140px;
 }
 
 .artist-content__playing-albums-buttons {
