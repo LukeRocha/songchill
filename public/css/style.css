@@ -679,7 +679,6 @@ i {
   background-color: var(--main-background-color);
   display: flex;
   flex-direction: column;
-  padding: 15px;
   width: 100%;
 }
 
