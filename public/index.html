@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Songchill, the best song app UI made withou any javascript, only pure css + html.">
+    <meta
+      name="description"
+      content="Songchill, the best song app UI made withou any javascript, only pure css + html."
+    />
     <title>Songchill</title>
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.ico" style="color: purple;">
-    <link rel="preconnect" href="https://kit.fontawesome.com/">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.ico" style="color: purple" />
+    <link rel="preconnect" href="https://kit.fontawesome.com/" />
     <script src="https://kit.fontawesome.com/9ed3108268.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,13 +32,11 @@
       </div>
       <div class="header__controller">
         <div class="header__search">
-          <a href="#" aria-label="glass " aria-label="search icon"
-            ><i class="icon header__icon fa-solid fa-magnifying-glass icon--tiny-disable"></i
-          ></a>
+          <i class="icon header__icon fa-solid fa-magnifying-glass icon--tiny-disable pointer"></i>
           <input type="text" class="header__input" placeholder="Search for chill" />
         </div>
         <nav class="header__user-menu">
-          <a href="#" aria-label="notifications feature menu"><i class="icon icon-medium fa-solid fa-bell icon--tiny-disable"></i></a>
+          <i class="icon icon-medium fa-solid fa-bell icon--tiny-disable pointer"></i>
           <input type="checkbox" id="toggle-user-menu" hidden />
           <label for="toggle-user-menu" class="">
             <img class="header__profile-picture" src="./img/profile-picture.png" alt="" />
@@ -133,7 +134,7 @@
             <input type="checkbox" id="toggle-your-music" hidden />
             <label for="toggle-your-music" class="sidebar__feature-wrapper">
               <h2 class="sidebar__title">YOUR MUSIC</h2>
-              <a for="trigger" class="sidebar__a" aria-label="your music feature link"> 
+              <a for="trigger" class="sidebar__a" aria-label="your music feature link">
                 <i class="fa-solid fa-chevron-down icon--small"></i>
               </a>
             </label>
@@ -265,9 +266,9 @@
           </div>
           <section class="artist-content__menu-tabs">
             <nav class="artist-content__nav-tabs">
-              <a href="#" class="artist-content__tabs-title" aria-label="artist navigation tab link to overview">OVERVIEW</a>
-              <a href="#" class="artist-content__tabs-title" aria-label="artist navigation tab link to biography">BIOGRAPHY</a>
-              <a href="#" class="artist-content__tabs-title" aria-label="artist navigation tab link to albums">ALBUMS</a>
+              <a href="#" class="artist-content__tabs-title"> OVERVIEW</a>
+              <a href="#" class="artist-content__tabs-title"> BIOGRAPHY</a>
+              <a href="#" class="artist-content__tabs-title"> ALBUMS</a>
             </nav>
           </section>
         </div>
@@ -280,10 +281,10 @@
                 </span>
                 <div class="artist-content__latest-release">
                   <img src="./img/related-album-cover-8.jpg" alt="" class="" />
-                  <span class="artist-content__latest-release-info">
+                  <a href="#" class="artist-content__latest-release-info">
                     <h2>72 Seasons</h2>
                     <h2>April 14 - 2023</h2>
-                  </span>
+                  </a>
                 </div>
               </div>
               <div class="artist-content__feature-block">
@@ -544,7 +545,8 @@
               <span class="artist-content__playing-albums-buttons">
                 <button
                   class="button button--play artist-content__playing-album-button--centralize"
-                 aria-label="save" >
+                  aria-label="save"
+                >
                   SAVE
                 </button>
                 <button class="button--circle" aria-label="circular">

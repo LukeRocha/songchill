@@ -47,6 +47,10 @@ a {
   width: 160px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* General elements classes */
 .button {
   min-width: 80px;
@@ -534,6 +538,7 @@ sidebar__list li {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  cursor: pointer;
 }
 
 .artist-content__profile-interactions {
@@ -575,6 +580,7 @@ sidebar__list li {
 .artist-content__tabs-title:hover {
   border-bottom: 3px solid var(--button-play-bg);
 }
+
 /* Artist content popular songs */
 .artist-content__feature-wrapper {
   display: flex;
@@ -592,6 +598,7 @@ sidebar__list li {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 32px;
 }
 
 .artist-content__block-title {
@@ -672,6 +679,7 @@ i {
 .artist-content__related-artists-title h2 {
   padding: 12px 0;
 }
+
 .artist-content__artists-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
