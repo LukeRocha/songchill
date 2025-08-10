@@ -32,8 +32,17 @@
       </div>
       <div class="header__controller">
         <div class="header__search">
-          <i class="icon header__icon fa-solid fa-magnifying-glass icon--tiny-disable pointer"></i>
-          <input type="text" class="header__input" placeholder="Search for chill" />
+          <label for="search-input">
+            <i
+              class="icon header__icon fa-solid fa-magnifying-glass icon--tiny-disable pointer"
+            ></i>
+          </label>
+          <input
+            id="search-input"
+            type="text"
+            class="header__input"
+            placeholder="Search for chill"
+          />
         </div>
         <nav class="header__user-menu">
           <i class="icon icon-medium fa-solid fa-bell icon--tiny-disable pointer"></i>
@@ -652,14 +661,14 @@
 
         <section class="artist-content__playing-album">
           <div class="artist-content__playing-album-info">
-            <span>
+            <a href="#" onclick="return false;">
               <img src="./img/album-cover.jpg" alt="" />
-            </span>
+            </a>
             <div class="artist-content__playing-album-artist-data">
-              <span class="artist-content__playing-album-title">
+              <a href="#" onclick="return false;" class="artist-content__playing-album-title">
                 <h2>1986</h2>
                 <h2>Master of Puppets</h2>
-              </span>
+              </a>
 
               <span class="artist-content__playing-albums-buttons">
                 <button
@@ -769,28 +778,36 @@
     <footer class="player">
       <div class="player__controller">
         <div class="player__buttons">
-          <i
-            class="fa-solid fa-backward-step icons-medium player__icon player__element--mobile-disable"
-          ></i>
-          <i class="fa-solid fa-play player__icon"></i>
-          <i class="fa-solid fa-forward-step icons-medium player__icon"></i>
+          <a href="#" onclick="return false;">
+            <i
+              class="fa-solid fa-backward-step icons-medium player__icon player__element--mobile-disable"
+            ></i>
+          </a>
+          <a href="#" onclick="return false;">
+            <i class="fa-solid fa-play player__icon"></i>
+          </a>
+          <a href="#" onclick="return false;">
+            <i class="fa-solid fa-forward-step icons-medium player__icon"></i>
+          </a>
         </div>
         <span class="player__song-timelapse player__element--mobile-disable">
-          <small>0:05</small>
-          <small>/</small>
-          <small>4:18</small>
+          <a href="#" onclick="return false;">
+            <small>0:05</small>
+            <small>/</small>
+            <small>4:18</small>
+          </a>
         </span>
       </div>
 
       <div class="player__playing-artist">
-        <span>
+        <a href="#" onclick="return false;">
           <img
             src="./img/album-cover.jpg"
             alt=""
             class="player__image player__element--mid-disable player__element--desktop"
           />
-        </span>
-        <span class="player__song-info">
+        </a>
+        <a href="#" onclick="return false;" class="player__song-info">
           <h1>Master of puppets</h1>
           <span class="player__playing-artist-wrapper">
             <h2>Metallica</h2>
@@ -798,13 +815,19 @@
               - Master of puppets
             </h2>
           </span>
-        </span>
+        </a>
       </div>
 
       <div class="player__interactions-controller player__element--mobile-disable">
-        <i class="fa-solid fa-shuffle"></i>
-        <i class="fa-solid fa-repeat"></i>
-        <i class="fa-solid fa-volume-high"></i>
+        <a href="#" onclick="return false;">
+          <i class="fa-solid fa-shuffle"></i>
+        </a>
+        <a href="#" onclick="return false;">
+          <i class="fa-solid fa-repeat"></i>
+        </a>
+        <a href="#" onclick="return false;">
+          <i class="fa-solid fa-volume-high"></i>
+        </a>
       </div>
     </footer>
   </body>
