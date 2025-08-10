@@ -1116,6 +1116,13 @@ i {
 }
 
 @media (min-width: 1020px) {
+  .artist-content__tabs-title--active {
+    border-bottom: 3px solid var(--button-play-bg);
+    height: 100%;
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+
   .artist-content__popular-content-wrapper {
     width: 100%;
   }
