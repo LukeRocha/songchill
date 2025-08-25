@@ -696,6 +696,7 @@ i {
 
 .artist-content__related-artists-title h2 {
   padding: 12px 0;
+  color: var(--font-color);
 }
 
 .artist-content__artists-wrapper {
@@ -728,6 +729,7 @@ i {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 15px;
 }
 
 .artist-content__discography-title {
@@ -770,7 +772,7 @@ i {
   box-sizing: border-box;
 
   align-items: center;
-  padding: 15px;
+  padding: 4px;
   gap: 8px;
   text-align: center;
   font-size: 0.9rem;
